@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Danilo Foronda</title>
+	<link rel="stylesheet" type="text/css" href="estilo2.css">
+	<link rel="icon" type="img/png" href="icon.png">
+	<script>
+		n=[];
+	</script>
+</head>
+<body style="font-family:Calibri Light; background-image: url('fondo3.jpg');font-size:18px;" onload="f()"><center>
+	<br><br>
+	<input type="text" placeholder="Ingresar números" id="in" style="background-color:lightgray;height:30px;font-size:18px;border-radius:8px;">
+	<br><br><br>
+	<input type="button" value="Ingresar" style="background-color:#D7DEDE; height:28px; width:100px; font-size:16px;border-radius:7px;" onclick="inicio();">
+	<br><br>
+	<button style="background-color:#D7DEDE; height:28px; width:100px; font-size:16px; border-radius:7px;" onclick="maximo();">Máximo</button>
+	<br><br><br>
+	<div id="div"></div>
+	<script>
+		function inicio()
+		{
+			n[n.length]=document.getElementById("in").value;
+			console.log(n);
+			console.log(n.length);
+			document.getElementById("in").value="";
+			if(n.length>5)
+			{
+				alert("No puede ingresar más números");
+				n.pop();
+				console.log(n);
+				console.log(n.length);
+			}
+		}
+		function maximo()
+		{
+			y=Math.max(...n);
+			document.getElementById("div").innerHTML=y;
+		}
+	</script>
+	<form method="get" action="index.html"><button type="submit" id="id7">Volver</button></form>
+</center></body>
+</html>

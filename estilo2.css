@@ -1,0 +1,14 @@
+#id7 {
+    width:100px;
+    height:60px;
+    background-color:lightgray;
+    position:relative;
+    border-radius:20px;
+    border-style:double;
+    border-width:7px;
+    border-color:#292929;
+    top:70px;
+    right:8px;
+    font-family:Bahnschrift Light;
+    font-size:25px;
+}
